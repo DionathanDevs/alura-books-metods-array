@@ -22,10 +22,10 @@ async function getBuscarLivrosDaApi() {
 
     // criando variavel de livros e aplicando desconto com a função
 
-    let livrosComDesconto = aplicarDesconto(livros)
+    //let livrosComDesconto = aplicarDesconto(livros)
 
     // chamando função para exibir os livros após desconto na tela
 
-    exibirOsLivrosNaTela(livrosComDesconto)
+    
 }
 

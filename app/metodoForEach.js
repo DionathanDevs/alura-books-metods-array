@@ -1,10 +1,14 @@
 // cria uma constante que pega o elemento que será usado na página, para exibir os livros do array
 const elementoParaInserirLivros = document.getElementById('livros')
 
-
+// capturando elemente e armazenando numa constante para utilizarmos na function
+const elementoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis')
 // criando a função para exibir os dados dos livros
 
+
 function exibirOsLivrosNaTela(listadeLivros){
+    //limpando o conteudo
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = ''
     //limpa o conteudo anterior
     elementoParaInserirLivros.innerHTML = ''
     listadeLivros.forEach(livro => {
@@ -25,6 +29,8 @@ function exibirOsLivrosNaTela(listadeLivros){
       </div>
     </div>`
     })
+
+    
 }
 
 /*function verificarDisponivel(livro){
